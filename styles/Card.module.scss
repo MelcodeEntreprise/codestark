@@ -1,0 +1,80 @@
+
+
+.card__section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 3rem;
+    
+}
+
+
+.card__img{
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+}
+
+.card__category{
+    text-transform: capitalize;
+    color: var(--blue);
+    background-color: #c6ddf3;
+    padding: 5px;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.card__title{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: Bitter-Regular, sans-serif;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    transition: .3s all;
+    margin-bottom: 1rem;
+    &:hover{
+        color: var(--blue);
+    }
+}
+
+.card__display{
+    border-bottom: 1px solid #ccc;
+    .card__body{
+        padding: 0 8px 8px 8px;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+}
+
+.card__footer{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    p{
+        padding-left: 3px;
+        font-family: Bitter-Regular, sans-serif;
+    }
+}
+
+.card__date{
+    padding: 0 0 28px 28px;
+    font-size: .8rem;
+    color: #525151;
+}
+
+@media screen and (max-width: 750px){
+    .card__section{
+        grid-template-columns: 1fr;
+    }
+}

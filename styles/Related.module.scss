@@ -1,0 +1,38 @@
+.related__form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.related__display{
+    margin: 35px 0;
+
+    span{
+        color: var(--blue);
+        font-size: 2rem;
+        display: inline-block;
+        font-family: Bitter-Regular, sans-serif;
+        margin-bottom: 20px;
+    }
+}
+
+
+.related__img{
+    position: relative;
+    box-shadow: 3px 3px 3px #363636;
+
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 750px){
+    .related__form{
+        grid-template-columns: 1fr;
+    }
+}

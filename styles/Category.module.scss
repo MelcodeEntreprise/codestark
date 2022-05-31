@@ -1,0 +1,21 @@
+.categoryDisplay{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.category__span{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7e7e7e;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 750px){
+    .categoryDisplay{
+        grid-template-columns: 1fr;
+    }
+}

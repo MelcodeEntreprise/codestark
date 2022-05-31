@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family:"Bitter-Regular";
+  src: url(./fonts/Bitter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+
+:root{
+  --blue: #0b5197;
+  --black: #242423;
+  --fond: #0B162C;
+  --white: #FBFBFB;
+
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat-Regular, sans-serif;
+  background-color: var(--fond);
+  color: var(--white);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+h1{
+  font-family: Bitter-Regular, sans-serif;
+}
+
+p{
+  color: #dbd6d6;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+
+.container {
+    padding: .5rem 3rem;
+}
+
+section{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 440px){
+  p{
+    font-size: 16px;
+  }
+}

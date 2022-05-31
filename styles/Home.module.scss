@@ -1,0 +1,36 @@
+.home__display{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+
+    h1{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
+
+    span{
+        text-shadow: 3px 3px 3px var(--blue);
+    }
+}
+
+.home__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+
+
+@media screen and (max-width: 750px){
+    .home__head img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .home__display{
+        grid-template-columns: 1fr;
+    }
+}
