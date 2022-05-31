@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Head from 'next/head';
 import CardPost from '../components/CardPost';
 import { getPosts } from '../services';
 import cardStyle from '../styles/Card.module.scss';
 import homeStyle from '../styles/Home.module.scss';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 
@@ -20,10 +19,7 @@ export default function Home({ posts }) {
           <section className={homeStyle.home__display}>
             <div>
               <h1>Bienvenue sur <span>CodeStark</span></h1>
-              <p>Débutant, passionné du monde du devéloppement web? cet endroit est fait pour vous.
-                Axé autour des technologies de l'écosystème javaScript, ce blog regorge de toutes sortes
-                d'astuces, tutos, et cours, pour un apprentissage et une évolution dans l'univers du devéloppement web.
-              </p>
+              <p>Débutant, passionné du monde du devéloppement web? cet endroit est fait pour vous. Axé autour des technologies de l'écosystème javaScript, ce blog regorge de toutes sortes d'astuces, tutos, et cours, pour un apprentissage et une évolution dans l'univers du devéloppement web.</p>
 
               <div className={homeStyle.home__head}>
                 <Image src="/svg/css.svg" alt="css" width="50" height="50" />

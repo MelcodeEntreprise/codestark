@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import moment from 'moment';
 import cardStyle from '../styles/Card.module.scss';
+import Image from 'next/image';
 
 
 
@@ -12,7 +13,7 @@ export default function CardPost({ post }){
       
         <div className={cardStyle.card__display}>
             <div className={cardStyle.card__img}>
-                <img src={post.featuredImage.url} alt={post.title} />
+                <Image src={post.featuredImage.url} alt={post.title} />
             </div>
 
             {post.categories.map((category, index) => (
@@ -27,7 +28,7 @@ export default function CardPost({ post }){
                 <p className={cardStyle.card__body}>{post.excerpt}</p>
             <div>
                 <div className={cardStyle.card__footer}>
-                    <img src={post.author.photo.url} alt={post.author.name} />
+                    <Image src={post.author.photo.url} alt={post.author.name} />
                     <p>{post.author.name}</p>
                 </div>
                 <div className={cardStyle.card__date}>

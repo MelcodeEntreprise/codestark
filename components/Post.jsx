@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import postStyle from '../styles/Post.module.scss';
+import Image from 'next/image';
 
 
 export default function Post({ post }){
@@ -51,7 +52,7 @@ export default function Post({ post }){
             <h1>{post?.title}</h1>
             <div>
                 <div className={postStyle.post__info}>
-                    <img src={post?.author.photo.url} alt={post?.author.name} />
+                    <Image src={post?.author.photo.url} alt={post?.author.name} />
                     <p>{post?.author.name}</p>
                 </div>
                 <div className={postStyle.post__date}>
@@ -59,7 +60,7 @@ export default function Post({ post }){
                 </div>
             </div>
             <div className={postStyle.post__img}>
-                <img src={post?.featuredImage.url} alt={post?.title} />
+                <Image src={post?.featuredImage.url} alt={post?.title} />
             </div>
             <div className={postStyle.post__content}>
                 {post?.content.raw.children.map((typeObj, index) => {

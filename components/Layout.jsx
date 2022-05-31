@@ -65,8 +65,8 @@ export default function Layout({children}){
                     <h1>Melcode</h1>
                     <h3>Me retrouver</h3>
                     <div className={footerStyle.footer__sociaux}>
-                        <a href="https://www.facebook.com/melcodeentreprise" target="_blank"><Image src="/svg/facebook.svg" alt="facebook" width="20" height="20" /></a>
-                        <a href="https://twitter.com/MelCode_" target="_blank"><Image src="/svg/twitter.svg" alt="twitter" width="20" height="20" /></a>
+                        <a href="https://www.facebook.com/melcodeentreprise" target="_blank" rel="noopener"><Image src="/svg/facebook.svg" alt="facebook" width="20" height="20" /></a>
+                        <a href="https://twitter.com/MelCode_" target="_blank" rel="noopener"><Image src="/svg/twitter.svg" alt="twitter" width="20" height="20" /></a>
                     </div>
                 </div>
                 <div>
