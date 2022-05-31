@@ -30,7 +30,7 @@ export default function Post({ post }){
             return <h4 key={index} className={postStyle.post__headingFour}>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
         case 'image':
             return (
-                 <img
+                 <Image
                 key={index}
                 alt={obj.title}
                 height={obj.height}
