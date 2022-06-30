@@ -120,7 +120,6 @@ export const getCategoryOnPost = async (slug) => {
     `
         
     const resultCategoryOnPost = await graphQLClient.request(query, {slug});
-
     return resultCategoryOnPost.postsConnection.edges;
 }
 

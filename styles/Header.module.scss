@@ -37,9 +37,6 @@
                 background-color: var(--blue);
                 transition: .5s all;
             }
-            &:hover{
-                color: var(--blue);
-            }
             &:hover::after{
                 width: 100%;
             }
@@ -69,7 +66,7 @@
 
 
 
-@media only screen and (max-width: 880px){
+@media only screen and (max-width: 980px){
 
    .header__nav{
        li{
@@ -82,7 +79,7 @@
    }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 760px){
     .header__logo{
         text-align: start;
     }
